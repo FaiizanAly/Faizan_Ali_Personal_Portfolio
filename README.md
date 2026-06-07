@@ -8,7 +8,7 @@ This website is designed to showcase my skills, projects, and professional profi
 
 Add your deployed portfolio link here:
 ```text
-[Live Site](faizanaly.vercel.app)
+https://faizanaly.vercel.app
 ```
 [LIVE SITE](faizanaly.vercel.app)
 
