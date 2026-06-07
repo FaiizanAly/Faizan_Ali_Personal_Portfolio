@@ -1,127 +1,37 @@
-# Faizan Ali | Personal Portfolio Website
+# 📌 IMPORTANT — Add Your Resume PDF
 
-A modern, responsive, and Apple-inspired personal portfolio website built using HTML, CSS, and JavaScript.
+To enable the **Download Resume** button on your portfolio:
 
-This website is designed to showcase my skills, projects, and professional profile through a clean, minimalistic, and user-friendly interface.
+1. Export your resume as a PDF file.
+2. **Rename it exactly to:** `resume.pdf`
+3. **Place it inside the `assets/` folder:**
+   ```
+   My Portfolio 2026/
+   └── assets/
+       ├── profile.jpg   ← ✅ Already added
+       └── resume.pdf    ← ❌ Add this file
+   ```
 
-## 🚀 Live Demo
+Once you add the file, the "Download Resume" button on every page will work automatically.
 
-Add your deployed portfolio link here:
+---
 
-```text
-https://your-portfolio-link.com
+# 📁 Folder Structure
+
 ```
-
----
-
-## ✨ Features
-
-- Modern UI
-- Fully responsive design
-- Dark / Light mode
-- Smooth scrolling
-- Interactive animations
-- Project showcase section
-- Download Resume button
-- Social media integration
-- Mobile-friendly navigation
-- SEO optimized structure
-- Clean and maintainable code
-
----
-
-## 🛠️ Tech Stack
-
-### Frontend
-
-- HTML5
-- CSS3
-- JavaScript (Vanilla JS)
-
-### Tools
-
-- Visual Studio Code
-- Git
-- GitHub
-
----
-
-## 📂 Project Structure
-
-```text
-portfolio/
-│
-├── index.html
-├── style.css
-├── script.js
-│
+My Portfolio 2026/
+├── index.html       ← Main HTML file
+├── style.css        ← All styles (Apple-inspired design)
+├── script.js        ← All JavaScript (interactions + animations)
 ├── assets/
-│   ├── images/
-│   ├── icons/
-│   └── resume/
-│
-└── README.md
+│   ├── profile.jpg  ← Your profile photo (already added)
+│   └── resume.pdf   ← Add your resume PDF here
+└── README.md        ← This file
 ```
 
----
+# 🚀 GitHub Pages Deployment
 
-## 🎨 Design Highlights
-
-- Clean typography
-- Minimalistic layout
-- Professional color palette
-- Smooth user experience
-- Accessibility-focused interface
-
----
-
-## 📱 Responsive Design
-
-The website is optimized for:
-
-- Desktop
-- Laptop
-- Tablet
-- Mobile Devices
-
----
-
-## ⚙️ Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/your-username/your-repository.git
-```
-
-Open the project folder and run:
-
-```bash
-index.html
-```
-
-Or use VS Code Live Server.
-
----
-
-## 🔧 Customization
-
-You can easily update:
-
-- Profile image
-- Resume file
-- Social links
-- Skills section
-- Projects section
-- Theme colors
-- Typography
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-Made with ❤️ using HTML, CSS & JavaScript.
+1. Create a GitHub repository.
+2. Upload all files maintaining the folder structure above.
+3. Go to: **Settings → Pages → Deploy from branch → main / root**
+4. Your portfolio will be live at: `https://yourusername.github.io/repo-name/`
