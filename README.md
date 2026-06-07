@@ -91,7 +91,7 @@ The website is optimized for:
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/FaiizanAly/Faizan_Ali_Personal_Portfolio
 ```
 
 Open the project folder and run:
