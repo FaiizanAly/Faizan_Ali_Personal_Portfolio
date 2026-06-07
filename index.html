@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =============================================
+       META & SEO
+       ============================================= -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary Meta Tags -->
+  <title>Faizan Ali | MCA Student | Java Developer</title>
+  <meta name="title" content="Faizan Ali | MCA Student | Java Developer" />
+  <meta name="description" content="MCA Student, Java Developer, Web Developer and aspiring Software Engineer. Explore projects, certifications, skills and experience of Faizan Ali." />
+  <meta name="keywords" content="Faizan Ali, MCA Student, Java Developer, Web Developer, Software Engineer, Portfolio" />
+  <meta name="author" content="Faizan Ali" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://faiizanaly.github.io/" />
+  <meta property="og:title" content="Faizan Ali | MCA Student | Java Developer" />
+  <meta property="og:description" content="MCA Student, Java Developer, Web Developer and aspiring Software Engineer. Explore projects, certifications, skills and experience of Faizan Ali." />
+  <meta property="og:image" content="assets/profile.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://x.com/faiizanaly" />
+  <meta property="twitter:title" content="Faizan Ali | MCA Student | Java Developer" />
+  <meta property="twitter:description" content="MCA Student, Java Developer, Web Developer and aspiring Software Engineer." />
+  <meta property="twitter:image" content="assets/profile.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230071E3'/><text y='.9em' font-size='75' x='12' fill='white' font-family='system-ui'>F</text></svg>" />
+
+  <!-- Google Fonts — SF Pro Display style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Faizan Ali",
+    "jobTitle": "MCA Student & Java Developer",
+    "email": "itsfaizanali5@gmail.com",
+    "url": "https://faiizanaly.github.io/",
+    "sameAs": [
+      "https://linkedin.com/in/faiizanaly",
+      "https://github.com/FaiizanAly",
+      "https://x.com/faiizanaly",
+      "https://instagram.com/faiizanaly"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- =============================================
+       LOADING SCREEN
+       ============================================= -->
+  <div id="loader" aria-label="Loading">
+    <div class="loader-logo">
+      <span>F</span>
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <!-- =============================================
+       SCROLL-TO-TOP BUTTON
+       ============================================= -->
+  <button id="scroll-top" aria-label="Scroll to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- =============================================
+       NAVIGATION
+       ============================================= -->
+  <header id="navbar" role="banner">
+    <nav class="nav-container" role="navigation" aria-label="Main navigation">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" aria-label="FAIZAN ALI - Home">
+        <span class="logo-text">FAIZAN ALI</span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="nav-links" role="list" id="nav-menu">
+        <li><a href="#home"           class="nav-link" aria-label="Home">Home</a></li>
+        <li><a href="#about"          class="nav-link" aria-label="About">About</a></li>
+        <li><a href="#education"      class="nav-link" aria-label="Education">Education</a></li>
+        <li><a href="#skills"         class="nav-link" aria-label="Skills">Skills</a></li>
+        <li><a href="#experience"     class="nav-link" aria-label="Experience">Experience</a></li>
+        <li><a href="#projects"       class="nav-link" aria-label="Projects">Projects</a></li>
+        <li><a href="#certifications" class="nav-link" aria-label="Certifications">Certifications</a></li>
+        <li><a href="#contact"        class="nav-link" aria-label="Contact">Contact</a></li>
+      </ul>
+
+      <!-- Right Controls -->
+      <div class="nav-controls">
+        <a href="assets/resume.pdf" download="Faizan_Ali_Resume.pdf" class="btn btn-primary btn-sm" id="nav-resume-btn" aria-label="Download Resume">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Resume
+        </a>
+
+        <!-- Dark Mode Toggle -->
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <span class="theme-icon sun-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+          <span class="theme-icon moon-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Hamburger (Mobile) -->
+        <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- =============================================
+         SECTION 1 — HERO
+         ============================================= -->
+    <section id="home" class="hero-section" aria-label="Hero">
+      <div class="hero-bg-gradient" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+
+        <!-- Text Side -->
+        <div class="hero-text" data-animate="fade-up">
+          <div class="hero-badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            Available
+          </div>
+
+          <h1 class="hero-name">FAIZAN ALI</h1>
+
+          <div class="hero-roles" aria-label="Roles">
+            <span class="role-tag" id="role-tag">MCA Student</span>
+          </div>
+
+          <p class="hero-intro">
+            Passionate MCA student with a strong interest in Java development, web technologies, problem solving and modern software engineering. Continuously learning, building projects and exploring innovative technologies to create impactful digital solutions.
+          </p>
+
+          <div class="hero-cta" role="group" aria-label="Call to action buttons">
+            <a href="assets/resume.pdf" download="Faizan_Ali_Resume.pdf" class="btn btn-primary" id="hero-resume-btn" aria-label="Download Resume">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download Resume
+            </a>
+            <a href="#projects" class="btn btn-secondary" aria-label="View Projects">
+              View Projects
+            </a>
+            <a href="#contact" class="btn btn-ghost" aria-label="Contact Me">
+              Contact Me
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials" aria-label="Social links">
+            <a href="https://linkedin.com/in/faiizanaly" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+              <!-- LinkedIn SVG -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://github.com/FaiizanAly" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+              <!-- GitHub SVG -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+            <a href="https://x.com/faiizanaly" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X (Twitter) Profile">
+              <!-- X SVG -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://instagram.com/faiizanaly" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram Profile">
+              <!-- Instagram SVG -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Image Side -->
+        <div class="hero-image" data-animate="fade-left">
+          <div class="profile-frame">
+            <div class="profile-ring" aria-hidden="true"></div>
+            <img
+              src="assets/profile.jpg"
+              alt="Faizan Ali — MCA Student and Java Developer"
+              class="profile-photo"
+              loading="eager"
+              width="380"
+              height="380"
+            />
+            <!-- Floating Badge -->
+            <div class="float-badge float-badge-1" aria-hidden="true">
+              <span>☕</span> Java Dev
+            </div>
+            <div class="float-badge float-badge-2" aria-hidden="true">
+              <span>🎓</span> MCA Student
+            </div>
+          </div>
+        </div>
+
+      </div><!-- .hero-container -->
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+        <span class="scroll-text">Scroll</span>
+        <div class="scroll-mouse" aria-hidden="true">
+          <div class="scroll-wheel"></div>
+        </div>
+      </a>
+
+    </section>
+
+    <!-- =============================================
+         SECTION 2 — ABOUT ME
+         ============================================= -->
+    <section id="about" class="section" aria-label="About Me">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-label">Get to Know Me</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left — Text -->
+          <div class="about-text" data-animate="fade-right">
+            <p class="about-para">
+              I am currently pursuing <strong>Master of Computer Applications (MCA)</strong> and actively developing my expertise in Java, SQL, Web Development and Generative AI. I enjoy building practical applications, solving real-world problems and continuously improving my technical skills.
+            </p>
+            <p class="about-para">
+              My goal is to secure opportunities as a <strong>Java Developer</strong> or Software Engineer where I can contribute, learn and grow while building high-quality software products.
+            </p>
+            <div class="about-actions">
+              <a href="#contact" class="btn btn-primary">Let's Connect</a>
+              <a href="assets/resume.pdf" download="Faizan_Ali_Resume.pdf" class="btn btn-secondary">Download CV</a>
+            </div>
+          </div>
+
+          <!-- Right — Stat Cards -->
+          <div class="about-stats" data-animate="fade-left">
+            <div class="stat-card" tabindex="0">
+              <div class="stat-icon" aria-hidden="true">🎓</div>
+              <div class="stat-value">MCA</div>
+              <div class="stat-label">Student</div>
+            </div>
+            <div class="stat-card" tabindex="0">
+              <div class="stat-icon" aria-hidden="true">☕</div>
+              <div class="stat-value">Java</div>
+              <div class="stat-label">Developer</div>
+            </div>
+            <div class="stat-card" tabindex="0">
+              <div class="stat-icon" aria-hidden="true">🚀</div>
+              <div class="stat-value">9+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-card" tabindex="0">
+              <div class="stat-icon" aria-hidden="true">🏆</div>
+              <div class="stat-value">4+</div>
+              <div class="stat-label">Certifications</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         SECTION 3 — EDUCATION
+         ============================================= -->
+    <section id="education" class="section section-alt" aria-label="Education">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-label">Academic Journey</span>
+          <h2 class="section-title">Education</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="timeline" role="list">
+
+          <!-- MCA -->
+          <div class="timeline-item" data-animate="fade-right" role="listitem">
+            <div class="timeline-dot" aria-hidden="true">
+              <div class="dot-inner"></div>
+            </div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-badge current-badge">Ongoing</div>
+              <div class="edu-icon" aria-hidden="true">🎓</div>
+              <h3 class="timeline-title">Master of Computer Applications</h3>
+              <p class="timeline-institution">Mahatma Jyotiba Phule Rohilkhand University</p>
+              <p class="timeline-duration">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                2025 – 2027
+              </p>
+              <p class="timeline-desc">Specializing in advanced computer science concepts, algorithms, software engineering and modern development practices.</p>
+            </div>
+          </div>
+
+          <!-- BCA -->
+          <div class="timeline-item timeline-item-right" data-animate="fade-left" role="listitem">
+            <div class="timeline-dot" aria-hidden="true">
+              <div class="dot-inner"></div>
+            </div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-badge completed-badge">Completed</div>
+              <div class="edu-icon" aria-hidden="true">📚</div>
+              <h3 class="timeline-title">Bachelor of Computer Applications</h3>
+              <p class="timeline-institution">Khandelwal College of Management Science &amp; Technology</p>
+              <p class="timeline-duration">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                2021 – 2024
+              </p>
+              <p class="timeline-desc">Gained strong foundation in programming, database management, software development and web technologies.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         SECTION 4 — SKILLS
+         ============================================= -->
+    <section id="skills" class="section" aria-label="Skills">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-label">What I Know</span>
+          <h2 class="section-title">Skills</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Programming Languages -->
+          <div class="skill-category" data-animate="fade-up">
+            <div class="skill-category-header">
+              <span class="skill-cat-icon" aria-hidden="true">💻</span>
+              <h3>Programming</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item" tabindex="0">
+                <div class="skill-info">
+                  <span class="skill-name">Java</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Java proficiency 85%">
+                  <div class="skill-fill" style="--pct: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item" tabindex="0">
+                <div class="skill-info">
+                  <span class="skill-name">SQL</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="SQL proficiency 80%">
+                  <div class="skill-fill" style="--pct: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item" tabindex="0">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-pct">75%</span>
+                </div>
+                <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript proficiency 75%">
+                  <div class="skill-fill" style="--pct: 75%"></div>
+                </div>
+              </div>
+              <div class="skill-item" tabindex="0">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 proficiency 90%">
+                  <div class="skill-fill" style="--pct: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item" tabindex="0">
+                <div class="skill-info">
+                  <span class="skill-name">CSS3</span>
+                  <span class="skill-pct">88%</span>
+                </div>
+                <div class="skill-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="CSS3 proficiency 88%">
+                  <div class="skill-fill" style="--pct: 88%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-category" data-animate="fade-up" style="--delay: 0.1s">
+            <div class="skill-category-header">
+              <span class="skill-cat-icon" aria-hidden="true">🛠️</span>
+              <h3>Tools</h3>
+            </div>
+            <div class="skill-chips">
+              <div class="skill-chip" tabindex="0">
+                <span class="chip-icon" aria-hidden="true">🐙</span> GitHub
+              </div>
+              <div class="skill-chip" tabindex="0">
+                <span class="chip-icon" aria-hidden="true">💙</span> VS Code
+              </div>
+              <div class="skill-chip" tabindex="0">
+                <span class="chip-icon" aria-hidden="true">🧠</span> IntelliJ IDEA
+              </div>
+              <div class="skill-chip" tabindex="0">
+                <span class="chip-icon" aria-hidden="true">📊</span> Excel
+              </div>
+            </div>
+          </div>
+
+          <!-- Technologies -->
+          <div class="skill-category" data-animate="fade-up" style="--delay: 0.2s">
+            <div class="skill-category-header">
+              <span class="skill-cat-icon" aria-hidden="true">⚡</span>
+              <h3>Technologies</h3>
+            </div>
+            <div class="skill-chips">
+              <div class="skill-chip" tabindex="0">
+                <span class="chip-icon" aria-hidden="true">🤖</span> Generative AI
+              </div>
+              <div class="skill-chip" tabindex="0">
+                <span class="chip-icon" aria-hidden="true">📱</span> Responsive Design
+              </div>
+              <div class="skill-chip" tabindex="0">
+                <span class="chip-icon" aria-hidden="true">🎨</span> Frontend Dev
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skill-category" data-animate="fade-up" style="--delay: 0.3s">
+            <div class="skill-category-header">
+              <span class="skill-cat-icon" aria-hidden="true">🌟</span>
+              <h3>Soft Skills</h3>
+            </div>
+            <div class="skill-chips">
+              <div class="skill-chip" tabindex="0">
+                <span class="chip-icon" aria-hidden="true">🧩</span> Problem Solving
+              </div>
+              <div class="skill-chip" tabindex="0">
+                <span class="chip-icon" aria-hidden="true">🤝</span> Team Collaboration
+              </div>
+              <div class="skill-chip" tabindex="0">
+                <span class="chip-icon" aria-hidden="true">🔄</span> Adaptability
+              </div>
+              <div class="skill-chip" tabindex="0">
+                <span class="chip-icon" aria-hidden="true">💬</span> Communication
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         SECTION 5 — EXPERIENCE
+         ============================================= -->
+    <section id="experience" class="section section-alt" aria-label="Experience">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-label">Work History</span>
+          <h2 class="section-title">Experience</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="experience-card glass-card" data-animate="fade-up" role="article">
+          <div class="exp-header">
+            <div class="exp-logo" aria-hidden="true">
+              <span>ON</span>
+            </div>
+            <div class="exp-info">
+              <h3 class="exp-role">Web Developer Intern</h3>
+              <p class="exp-company">OctaNet Software Services</p>
+              <p class="exp-duration">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                September 2023 – October 2023
+              </p>
+            </div>
+            <div class="exp-badge">Internship</div>
+          </div>
+          <ul class="exp-responsibilities" aria-label="Responsibilities">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Developed responsive landing pages with clean, modern design.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Built dynamic To-Do applications with full CRUD functionality.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Used HTML, CSS and JavaScript to build interactive UIs.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Applied DOM manipulation techniques for dynamic content updates.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Implemented Local Storage for persistent data across sessions.
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Improved user experience through thoughtful frontend design.
+            </li>
+          </ul>
+          <div class="exp-tags" aria-label="Technologies used">
+            <span class="exp-tag">HTML5</span>
+            <span class="exp-tag">CSS3</span>
+            <span class="exp-tag">JavaScript</span>
+            <span class="exp-tag">DOM Manipulation</span>
+            <span class="exp-tag">Local Storage</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================
+         SECTION 6 — PROJECTS
+         ============================================= -->
+    <section id="projects" class="section" aria-label="Projects">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-label">What I've Built</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs" role="tablist" aria-label="Project filters" data-animate="fade-up">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" id="tab-all">All</button>
+          <button class="filter-btn" data-filter="featured" role="tab" aria-selected="false" id="tab-featured">Featured</button>
+          <button class="filter-btn" data-filter="mini" role="tab" aria-selected="false" id="tab-mini">Mini Projects</button>
+        </div>
+
+        <!-- Featured Projects (Large Cards) -->
+        <div class="featured-projects" id="featured-projects">
+
+          <!-- Project 1: Canteen -->
+          <article class="project-card featured-card" data-category="featured" data-animate="fade-up">
+            <div class="project-card-inner">
+              <div class="project-icon-wrap" aria-hidden="true">
+                <div class="project-icon-bg" style="background: linear-gradient(135deg,#FF6B6B,#FF8E53)"></div>
+                <span class="project-icon">🍽️</span>
+              </div>
+              <div class="project-content">
+                <div class="project-number" aria-hidden="true">01</div>
+                <h3 class="project-title">KCMT Canteen Management System</h3>
+                <p class="project-desc">Food ordering and management system developed for efficient menu handling, order tracking and canteen operations.</p>
+                <div class="project-tags" aria-label="Technologies">
+                  <span class="project-tag">Java</span>
+                  <span class="project-tag">SQL</span>
+                  <span class="project-tag">GUI</span>
+                </div>
+                <a href="https://github.com/FaiizanAly/kcmt-canteen" target="_blank" rel="noopener noreferrer" class="btn btn-project" aria-label="View KCMT Canteen Management System on GitHub">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Calculator -->
+          <article class="project-card featured-card" data-category="featured" data-animate="fade-up" style="--delay: 0.1s">
+            <div class="project-card-inner">
+              <div class="project-icon-wrap" aria-hidden="true">
+                <div class="project-icon-bg" style="background: linear-gradient(135deg,#4ECDC4,#44A8B3)"></div>
+                <span class="project-icon">🔢</span>
+              </div>
+              <div class="project-content">
+                <div class="project-number" aria-hidden="true">02</div>
+                <h3 class="project-title">GUI Calculator</h3>
+                <p class="project-desc">Desktop-style calculator application demonstrating logic building and programming fundamentals with a clean user interface.</p>
+                <div class="project-tags" aria-label="Technologies">
+                  <span class="project-tag">Java</span>
+                  <span class="project-tag">Swing</span>
+                  <span class="project-tag">GUI</span>
+                </div>
+                <div class="project-btn-group">
+                  <a href="https://calculatorbyfaizan.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-live" aria-label="Live Demo of GUI Calculator">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/FaiizanAly/gui-calculator" target="_blank" rel="noopener noreferrer" class="btn btn-project" aria-label="View GUI Calculator on GitHub">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: AR Game -->
+          <article class="project-card featured-card" data-category="featured" data-animate="fade-up" style="--delay: 0.2s">
+            <div class="project-card-inner">
+              <div class="project-icon-wrap" aria-hidden="true">
+                <div class="project-icon-bg" style="background: linear-gradient(135deg,#A18CD1,#FBC2EB)"></div>
+                <span class="project-icon">🎮</span>
+              </div>
+              <div class="project-content">
+                <div class="project-number" aria-hidden="true">03</div>
+                <h3 class="project-title">AR Gesture Shooter Game</h3>
+                <p class="project-desc">Interactive game utilizing gesture-based controls and innovative user interaction concepts for an immersive gaming experience.</p>
+                <div class="project-tags" aria-label="Technologies">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">OpenCV</span>
+                  <span class="project-tag">AR</span>
+                </div>
+                <div class="project-btn-group">
+                  <a href="https://ar-gesture-shooter-game.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-live" aria-label="Live Demo of AR Gesture Shooter Game">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/FaiizanAly/AR-Gesture-Shooter-Game" target="_blank" rel="noopener noreferrer" class="btn btn-project" aria-label="View AR Gesture Shooter Game on GitHub">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Typing Speed -->
+          <article class="project-card featured-card" data-category="featured" data-animate="fade-up" style="--delay: 0.3s">
+            <div class="project-card-inner">
+              <div class="project-icon-wrap" aria-hidden="true">
+                <div class="project-icon-bg" style="background: linear-gradient(135deg,#F7971E,#FFD200)"></div>
+                <span class="project-icon">⌨️</span>
+              </div>
+              <div class="project-content">
+                <div class="project-number" aria-hidden="true">04</div>
+                <h3 class="project-title">Typing Speed Test</h3>
+                <p class="project-desc">Web application for measuring typing speed, accuracy and performance with real-time WPM calculation and result tracking.</p>
+                <div class="project-tags" aria-label="Technologies">
+                  <span class="project-tag">HTML5</span>
+                  <span class="project-tag">CSS3</span>
+                  <span class="project-tag">JavaScript</span>
+                </div>
+                <div class="project-btn-group">
+                  <a href="https://ttspeed.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-live" aria-label="Live Demo of Typing Speed Test">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/FaiizanAly/typing-speed-test" target="_blank" rel="noopener noreferrer" class="btn btn-project" aria-label="View Typing Speed Test on GitHub">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /.featured-projects -->
+
+        <!-- Mini Projects Grid -->
+        <h3 class="mini-projects-title" data-animate="fade-up">More Projects</h3>
+        <div class="mini-projects" id="mini-projects">
+
+          <article class="mini-card" data-category="mini" data-animate="fade-up" tabindex="0">
+            <div class="mini-icon" aria-hidden="true">🎨</div>
+            <h4 class="mini-title">Drawing App</h4>
+            <p class="mini-desc">Canvas-based drawing application with multiple tools and colors.</p>
+            <div class="mini-link-group">
+              <a href="https://fdraw.netlify.app/" target="_blank" rel="noopener noreferrer" class="mini-link mini-link-live" aria-label="Drawing App Live Demo">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                Live
+              </a>
+              <a href="https://github.com/FaiizanAly/Drawing-App" target="_blank" rel="noopener noreferrer" class="mini-link" aria-label="Drawing App on GitHub">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="mini-card" data-category="mini" data-animate="fade-up" style="--delay:0.05s" tabindex="0">
+            <div class="mini-icon" aria-hidden="true">⌨️</div>
+            <h4 class="mini-title">Key Event Inspector</h4>
+            <p class="mini-desc">Developer tool to inspect and visualize keyboard events in real-time.</p>
+            <div class="mini-link-group">
+              <a href="https://key-event-inspector.netlify.app/" target="_blank" rel="noopener noreferrer" class="mini-link mini-link-live" aria-label="Key Event Inspector Live Demo">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                Live
+              </a>
+              <a href="https://github.com/FaiizanAly/Key-Event-Inspector" target="_blank" rel="noopener noreferrer" class="mini-link" aria-label="Key Event Inspector on GitHub">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="mini-card" data-category="mini" data-animate="fade-up" style="--delay:0.1s" tabindex="0">
+            <div class="mini-icon" aria-hidden="true">🔄</div>
+            <h4 class="mini-title">Unit Converter</h4>
+            <p class="mini-desc">Versatile converter supporting multiple unit types and calculations.</p>
+            <a href="https://github.com/FaiizanAly/UnitConverter" target="_blank" rel="noopener noreferrer" class="mini-link" aria-label="Unit Converter on GitHub">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+          </article>
+
+          <article class="mini-card" data-category="mini" data-animate="fade-up" style="--delay:0.15s" tabindex="0">
+            <div class="mini-icon" aria-hidden="true">🛒</div>
+            <h4 class="mini-title">Shopping List App</h4>
+            <p class="mini-desc">Smart shopping list with local storage persistence and categories.</p>
+            <a href="https://github.com/FaiizanAly/Shopping-List-App" target="_blank" rel="noopener noreferrer" class="mini-link" aria-label="Shopping List App on GitHub">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+          </article>
+
+          <article class="mini-card" data-category="mini" data-animate="fade-up" style="--delay:0.2s" tabindex="0">
+            <div class="mini-icon" aria-hidden="true">✅</div>
+            <h4 class="mini-title">To Do List</h4>
+            <p class="mini-desc">Elegant task manager with priority tags and completion tracking.</p>
+            <a href="https://github.com/FaiizanAly/ToDoList" target="_blank" rel="noopener noreferrer" class="mini-link" aria-label="To Do List on GitHub">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+          </article>
+
+        </div><!-- /.mini-projects -->
+
+      </div>
+    </section>
+
+    <!-- =============================================
+         SECTION 7 — CERTIFICATIONS
+         ============================================= -->
+    <section id="certifications" class="section section-alt" aria-label="Certifications">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-label">Professional Credentials</span>
+          <h2 class="section-title">Certifications</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="cert-grid">
+
+          <!-- AWS -->
+          <article class="cert-card glass-card" data-animate="fade-up" tabindex="0">
+            <div class="cert-icon-wrap">
+              <div class="cert-icon" aria-hidden="true">☁️</div>
+            </div>
+            <div class="cert-content">
+              <div class="cert-issuer">AWS / Forage</div>
+              <h3 class="cert-title">AWS Solutions Architecture Job Simulation</h3>
+              <p class="cert-desc">Hands-on cloud architecture simulation covering AWS services, solutions design and best practices.</p>
+            </div>
+            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/pmnMSL4QiQ9JCgE3W/kkE9HyeNcw6rwCRGw_pmnMSL4QiQ9JCgE3W_M2JGLpdRA7MwrCHrk_1753719690809_completion_certificate.pdf"
+               target="_blank" rel="noopener noreferrer"
+               class="btn btn-verify" aria-label="Verify AWS Solutions Architecture Certificate">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Verify Credential
+            </a>
+          </article>
+
+          <!-- Tata GenAI -->
+          <article class="cert-card glass-card" data-animate="fade-up" style="--delay:0.1s" tabindex="0">
+            <div class="cert-icon-wrap">
+              <div class="cert-icon" aria-hidden="true">🤖</div>
+            </div>
+            <div class="cert-content">
+              <div class="cert-issuer">Tata / Forage</div>
+              <h3 class="cert-title">GenAI Powered Data Analytics Job Simulation</h3>
+              <p class="cert-desc">Applied generative AI techniques to data analytics workflows and business intelligence solutions.</p>
+            </div>
+            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_M2JGLpdRA7MwrCHrk_1753716898630_completion_certificate.pdf"
+               target="_blank" rel="noopener noreferrer"
+               class="btn btn-verify" aria-label="Verify Tata GenAI Certificate">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Verify Credential
+            </a>
+          </article>
+
+          <!-- Power BI -->
+          <article class="cert-card glass-card" data-animate="fade-up" style="--delay:0.2s" tabindex="0">
+            <div class="cert-icon-wrap">
+              <div class="cert-icon" aria-hidden="true">📊</div>
+            </div>
+            <div class="cert-content">
+              <div class="cert-issuer">CertX</div>
+              <h3 class="cert-title">Power BI Workshop Masterclass</h3>
+              <p class="cert-desc">Comprehensive training in Power BI for data visualization, dashboards and business reporting.</p>
+            </div>
+            <a href="https://certx.in/certificate/4d173e82-3861-47b4-ab33-09d1da812849225857"
+               target="_blank" rel="noopener noreferrer"
+               class="btn btn-verify" aria-label="Verify Power BI Certificate">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Verify Credential
+            </a>
+          </article>
+
+          <!-- Microsoft GenAI -->
+          <article class="cert-card glass-card" data-animate="fade-up" style="--delay:0.3s" tabindex="0">
+            <div class="cert-icon-wrap">
+              <div class="cert-icon" aria-hidden="true">🪟</div>
+            </div>
+            <div class="cert-content">
+              <div class="cert-issuer">Microsoft + LinkedIn</div>
+              <h3 class="cert-title">Career Essentials in Generative AI</h3>
+              <p class="cert-desc">Foundational knowledge of Generative AI concepts, tools and professional applications by Microsoft and LinkedIn.</p>
+            </div>
+            <a href="https://www.linkedin.com/learning/certificates/dc5dfb61aeb0f970a331a59dcb2a135206d7df91060b6b9e32642fcacf579bfb"
+               target="_blank" rel="noopener noreferrer"
+               class="btn btn-verify" aria-label="Verify Microsoft GenAI Certificate">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Verify Credential
+            </a>
+          </article>
+
+        </div><!-- /.cert-grid -->
+      </div>
+    </section>
+
+    <!-- =============================================
+         SECTION 8 — CONTACT
+         ============================================= -->
+    <section id="contact" class="section" aria-label="Contact">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="section-title">Contact</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Left — Info Cards -->
+          <div class="contact-info" data-animate="fade-right">
+            <p class="contact-intro">
+              I'm open to exciting opportunities, internships and collaborations. Feel free to reach out — I'd love to connect!
+            </p>
+
+            <div class="contact-item" tabindex="0">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-detail">
+                <span class="contact-label">Email</span>
+                <a href="mailto:itsfaizanali5@gmail.com" class="contact-value">itsfaizanali5@gmail.com</a>
+              </div>
+            </div>
+
+
+
+            <!-- Social Links -->
+            <div class="contact-socials" aria-label="Social profiles">
+              <a href="https://linkedin.com/in/faiizanaly" target="_blank" rel="noopener noreferrer" class="contact-social-link" aria-label="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://github.com/FaiizanAly" target="_blank" rel="noopener noreferrer" class="contact-social-link" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+              <a href="https://x.com/faiizanaly" target="_blank" rel="noopener noreferrer" class="contact-social-link" aria-label="X">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                X (Twitter)
+              </a>
+              <a href="https://instagram.com/faiizanaly" target="_blank" rel="noopener noreferrer" class="contact-social-link" aria-label="Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                Instagram
+              </a>
+            </div>
+          </div>
+
+          <!-- Right — Contact Form -->
+          <div class="contact-form-wrap" data-animate="fade-left">
+            <form class="contact-form" id="contact-form" novalidate aria-label="Contact form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name</label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your full name" required aria-required="true" autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address</label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="your@email.com" required aria-required="true" autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="Job opportunity / Collaboration" required aria-required="true" />
+              </div>
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea id="contact-message" name="message" class="form-textarea" rows="5" placeholder="Tell me about the opportunity..." required aria-required="true"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="form-submit-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                Send Message
+              </button>
+              <div class="form-note" aria-live="polite">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                This form opens your mail client with pre-filled details.
+              </div>
+            </form>
+          </div>
+
+        </div><!-- /.contact-grid -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="footer-logo">Faizan Ali</span>
+        <p class="footer-tagline">"Built with passion, curiosity and continuous learning."</p>
+      </div>
+      <div class="footer-links" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-socials" aria-label="Social media links">
+        <a href="https://linkedin.com/in/faiizanaly" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/FaiizanAly" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="https://x.com/faiizanaly" target="_blank" rel="noopener noreferrer" aria-label="X">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://instagram.com/faiizanaly" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">© 2026 Faizan Ali. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
