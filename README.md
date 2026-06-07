@@ -10,7 +10,7 @@ Add your deployed portfolio link here:
 ```text
 https://faizanaly.vercel.app/
 ```
-[LIVE SITE](faizanaly.vercel.app)
+[Visit Live Website](https://faizanaly.vercel.app/)
 
 ---
 
