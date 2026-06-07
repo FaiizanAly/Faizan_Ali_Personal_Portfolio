@@ -16,7 +16,7 @@ https://faizanaly.vercel.app
 
 ## ✨ Features
 
-- Apple-inspired modern UI
+- Modern UI
 - Fully responsive design
 - Dark / Light mode
 - Smooth scrolling
@@ -67,7 +67,6 @@ portfolio/
 
 ## 🎨 Design Highlights
 
-- Apple-inspired design language
 - Clean typography
 - Minimalistic layout
 - Professional color palette
