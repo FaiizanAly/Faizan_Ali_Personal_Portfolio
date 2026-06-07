@@ -4,12 +4,13 @@ A modern, responsive, and Apple-inspired personal portfolio website built using 
 
 This website is designed to showcase my skills, projects, and professional profile through a clean, minimalistic, and user-friendly interface.
 
-## 🚀 [Live Demo](faizanaly.vercel.app) 
+## 🚀 Live Demo
 
 Add your deployed portfolio link here:
 ```text
 [Live Site](faizanaly.vercel.app)
 ```
+[LIVE SITE](faizanaly.vercel.app)
 
 ---
 
