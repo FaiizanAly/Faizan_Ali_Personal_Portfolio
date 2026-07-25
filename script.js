@@ -496,7 +496,7 @@ function initContactForm() {
       `Hi Faizan,\n\nMy name is ${name} (${email}).\n\n${message}\n\nBest regards,\n${name}`
     );
 
-    const mailtoURL = `mailto:itsfaizanali5@gmail.com?subject=${mailSubject}&body=${mailBody}`;
+    const mailtoURL = `mailto:git.faizanali@gmail.com?subject=${mailSubject}&body=${mailBody}`;
     window.location.href = mailtoURL;
 
     showFormFeedback(form, '✅ Opening your mail client…', 'success');
